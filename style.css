@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    overflow: hidden;
+}
+body{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: white;
+    position: relative;
+    width: 600px;
+    min-height: 500px;
+    margin: 40px;
+    border-radius: 10px;
+}
+.container:before{
+    content: '';
+    position: absolute;
+    background-color: hotpink;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    border-radius: 5px;
+}
+.container:after{
+    content: '';
+    position: absolute;
+    background-color: hotpink;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -2;
+    filter: blur(40px);
+    margin: 20px;
+}
+.container:before, .container:after{
+    background: linear-gradient(360deg, #f40552,#fc7e2f,
+     #c3edea);
+}
+ hr{
+    color: red;
+}
+h1{
+    color: #fc7e2f;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+h3{
+    color: #222;
+    text-align: center;
+    padding:5px;
+    font-style: italic;
+    font-size: 18px;
+}
+.container label{
+    font-size: 35px;
+    color: black;
+    margin-left: 35%;
+    font-weight: bold;
+}
+.container input{
+    font-size: 30px;
+    margin: 10px 5px;
+    width: 90%;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.btn{
+    background-color: #fc7e2f;
+    color: black;
+    font-size: 25px;
+    margin: 15px 35%;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+button:hover{
+    color:white;
+    background-color: black;
+}
+.container p{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(7,194, 7);
+    margin: 25px;
+    text-align: center;
+}
+/* @media only screen and (max-width: 768px){
+    .container label{
+        margin-left:5px;
+    }
+} */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .container label{
+        margin-left:70px;
+    }
+    .btn{
+        margin-left: 80px;
+    }
+}
