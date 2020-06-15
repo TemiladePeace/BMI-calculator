@@ -1,4 +1,4 @@
-# 30-days-of-code-Day3
+# BMI-calculator
 A BMI CALCULATOR
 
-https://peachy01.github.io/30-days-of-code-Day3/
+https://peachy01.github.io/BMI-calculator/
